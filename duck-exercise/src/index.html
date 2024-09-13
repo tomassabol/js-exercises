@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+    <title>My Web Page</title>
+    <script src="index.js" type="module" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="../public/duck.png" alt="Duck" class="header-logo" />
+      <a href="user.html">Users</a>
+    </header>
+
+    <div class="todo-container">
+      <form id="question-form">
+        <textarea
+          type="text"
+          id="question-input"
+          name="question-input"
+          placeholder="Enter new todo..."
+          required
+        ></textarea>
+        <button type="submit" id="submit-question">+ Add</button>
+      </form>
+    </div>
+
+    <ul id="todoList"></ul>
+
+    <p id="message">message</p>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Form</title>
+    <link rel="stylesheet" href="user.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../public/duck.png" alt="Duck" class="header-logo" />
+      <a href="index.html">Home</a>
+    </header>
+
+    <form id="userForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+      <div class="error">Username must be between 4 and 15 characters</div>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <div class="error">Please enter a valid email address</div>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <div class="error">Password must be 8 characters or less</div>
+
+      <input type="submit" value="Submit" />
+    </form>
+    <script src="user.js" type="module"></script>
+  </body>
+</html>
